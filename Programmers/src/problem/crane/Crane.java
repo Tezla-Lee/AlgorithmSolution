@@ -9,7 +9,7 @@ public class Crane {
         int answer = 0;
         int[] arr = new int[(board[0].length + 1) * (board.length + 1)];
 
-        for (int i = 0; i < moves.length; i++) {
+        for (int i = 0; i < moves.length; i++) {  
             for (int j = 0; j < board.length; j++) {
                 if (board[j][moves[i] - 1] == 0) {
                     continue;
