@@ -1,30 +1,38 @@
 package fastcampus.skilltree;
 
-import java.util.Arrays;
-import java.util.HashSet;
+import java.util.ArrayList;
+import java.util.List;
 
 public class SkillTree {
 
     public int solution(String skill, String[] skill_trees) {
         int answer = 0;
 
-        for (int i = 0; i < skill_trees.length; i++) {
-            HashSet<String> hash = new HashSet<>();
-            String[] arr = skill_trees[i].split("");
-            hash.addAll(Arrays.asList(arr));
+        loop:
+        for (String tree : skill_trees) {
+            List<Integer> list = new ArrayList<>();
+            for (char c : tree.toCharArray()) {
+                int index = skill.indexOf(c);
 
-            for (int j =0; j < skill.length(); j++) {
-                while(hash.contains(skill.charAt(j))) {
-
+                if (index > -1) {
+                    list.add(index);
                 }
             }
+
+            if (list.size() > 0 && list.get(0) != 0) {
+                continue;
+            }
+            for (int i = 1; i < list.size(); i++) {
+                if (list.get(i) != list.get(i - 1) + 1) {
+                    continue loop;
+                }
+            }
+            answer++;
         }
         return answer;
     }
 
     public static void main(String[] args) {
-        SkillTree skillTree = new SkillTree();
-
-        skillTree.solution("CBD", new String[]{"BACDE", "CBADF", "AECB", "BDA"});
+        System.out.println(new SkillTree().solution("CBD", new String[]{"BACDE", "CBADF", "AECB", "BDA"}));
     }
 }
