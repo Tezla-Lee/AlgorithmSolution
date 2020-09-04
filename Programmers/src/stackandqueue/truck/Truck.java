@@ -16,12 +16,14 @@ public class Truck {
 
             if (!count.isEmpty() && count.peek() + bridge_length == i) {
                 total -= bridge.peek();
+//                System.out.println(i + "s: " + bridge.peek() + " out");
                 bridge.remove();
                 count.remove();
             }
 
             if (num != truck_weights.length && total + truck_weights[num] <= weight) {
                 bridge.add(truck_weights[num]);
+//                System.out.println(i + "s: " + bridge.getLast() + " in");
                 total += truck_weights[num];
                 count.add(i);
                 num++;
@@ -41,5 +43,7 @@ public class Truck {
 
     public static void main(String[] args) {
         System.out.println(new Truck().solution(2, 10, new int[]{7, 4, 5, 6}));
+        System.out.println(new Truck().solution(3, 10, new int[]{7, 4, 5, 6,1,2,5,9,10}));
+        System.out.println(new Truck().solution(100, 100, new int[]{10,10,10,10,10,10,10,10,10,10}));
     }
 }
