@@ -26,12 +26,7 @@ class Printer {
         List<Document> completeList = new ArrayList<>();
 
         for (int i = 0; i < priorities.length; i++) {
-            if (i == location) {
-                locationDoc = new Document(location, priorities[location]);
-                waitingList.add(locationDoc);
-            } else {
                 waitingList.add(new Document(i, priorities[i]));
-            }
         }
 
         while (!waitingList.isEmpty()) {
