@@ -30,17 +30,27 @@ public class BiggestNum {
 
         // case 1
         PriorityQueue<Number> list = new PriorityQueue<>();
-        for (int i = 0; i < numbers.length; i++) {
-            if (numbers[i] != 0) {
-                break;
-            }
-            if (i == numbers.length - 1 && numbers[i] == 0) {
-                return "0";
-            }
-        }
+
+        // numbers 가 전부 0인 경우를 걸러줌 ...
+//        for (int i = 0; i < numbers.length; i++) {
+//            if (numbers[i] != 0) {
+//                break;
+//            }
+//            if (i == numbers.length - 1 && numbers[i] == 0) {
+//                return "0";
+//            }
+//        }
+
         for (int number : numbers) {
-            list.add(new Number(Integer.toString(number)));
+            list.offer(new Number(String.valueOf(number)));
         }
+
+        // numbers 가 전부 0인 경우를 걸러줌
+//        assert list.peek() != null;
+//        if (list.peek().equals("0")) {
+//            return "0";
+//        }
+
         for (int i = 0; i < numbers.length; i++) {
             Number temp = list.poll();
             bigNum.append(temp);
@@ -65,9 +75,9 @@ public class BiggestNum {
     }
 
     public static void main(String[] args) {
-        System.out.println(new BiggestNum().solution(new int[]{6,10,2}));
+//        System.out.println(new BiggestNum().solution(new int[]{6,10,2}));
         System.out.println(new BiggestNum().solution(new int[]{0,0,0,0,0,0}));
-        System.out.println(new BiggestNum().solution(new int[]{3,30,34,5,9}));
-        System.out.println(new BiggestNum().solution(new int[]{3,1,1,1,1,1,130,34,5,9,4,6,2,3,5,6,8,9,100}));
+//        System.out.println(new BiggestNum().solution(new int[]{3,30,34,5,9}));
+//        System.out.println(new BiggestNum().solution(new int[]{3,1,1,1,1,1,130,34,5,9,4,6,2,3,5,6,8,9,100}));
     }
 }

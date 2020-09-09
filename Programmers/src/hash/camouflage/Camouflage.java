@@ -1,4 +1,4 @@
-package hashMap.camouflage;
+package hash.camouflage;
 
 import java.util.HashMap;
 
