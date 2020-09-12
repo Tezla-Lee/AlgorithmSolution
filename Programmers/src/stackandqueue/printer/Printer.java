@@ -1,7 +1,7 @@
 package stackandqueue.printer;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
 // https://programmers.co.kr/learn/courses/30/lessons/42587
 class Document{
     int index;
@@ -47,11 +47,13 @@ class Printer {
                 waitingList.add(doc);
             }
         }
+
         return -1;
     }
 
     public static void main(String[] args) {
         System.out.println(new Printer().solution(new int[]{2, 1, 3, 2}, 2));
         System.out.println(new Printer().solution(new int[]{1,1,9,1,1,1}, 0));
+
     }
 }
