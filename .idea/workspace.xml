@@ -19,11 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="82721bed-1e12-4c76-b68b-4745a1c5871d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Programmers/out/production/Programmers/heap/diskcontroller/DiskController.class" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers/out/production/Programmers/heap/diskcontroller/DiskController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programmers/out/production/Programmers/heap/diskcontroller/Job.class" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers/out/production/Programmers/heap/diskcontroller/Job.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Programmers/src/heap/diskcontroller/DiskController.java" beforeDir="false" afterPath="$PROJECT_DIR$/Programmers/src/heap/diskcontroller/DiskController.java" afterDir="false" />
-    </list>
+    <list default="true" id="82721bed-1e12-4c76-b68b-4745a1c5871d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -140,17 +136,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <list>
       <item itemvalue="Application.PhoneBook" />
       <item itemvalue="Application.Camouflage" />
@@ -217,6 +202,7 @@
       <workItem from="1599036732865" duration="105000" />
       <workItem from="1599036862914" duration="288000" />
       <workItem from="1599456713635" duration="24000" />
+      <workItem from="1600247010750" duration="185000" />
     </task>
     <servers />
   </component>
@@ -413,10 +399,11 @@
     </state>
     <state x="524" y="179" key="extract.method.dialog/0.25.1440.816@0.25.1440.816" timestamp="1598589870533" />
     <state x="698" y="212" key="extract.method.dialog/1920.203.1440.877/0.23.1920.999@0.23.1920.999" timestamp="1597717946789" />
-    <state x="251" y="45" key="new project wizard" timestamp="1599036920418">
-      <screen x="0" y="25" width="1920" height="981" />
+    <state x="188" y="25" key="new project wizard" timestamp="1600247060322">
+      <screen x="0" y="25" width="1440" height="801" />
     </state>
     <state x="220" y="41" key="new project wizard/0.23.1680.864@0.23.1680.864" timestamp="1597412486530" />
+    <state x="188" y="25" key="new project wizard/0.25.1440.801@0.25.1440.801" timestamp="1600247060322" />
     <state x="251" y="45" key="new project wizard/0.25.1920.981@0.25.1920.981" timestamp="1599036920418" />
     <state x="583" y="100" key="new project wizard/1920.203.1440.819/0.23.1920.999@0.23.1920.999" timestamp="1597400080870" />
     <state x="505" y="210" width="670" height="676" key="search.everywhere.popup" timestamp="1597574894254">
